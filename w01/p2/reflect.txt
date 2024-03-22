@@ -1,0 +1,21 @@
+###########################################################################
+
+                              Reflection
+                             Workshop - #1
+Full Name  : Aung Moe Thwe
+Student ID#: 148396237
+Email      : amthwe@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+###########################################################################
+
+1. Yes. I do have some prior experience during my highschool. I did Python, C, C++, Java and Javascript. When i first started learning C, it was completely different from my experience in Python in terms of syntax and has a less level of abstraction compared to it. Although this makes it more efficient, it takes a bit of time to get used to. This course is intresting and listening to lectures helped me review my knowledge of C and enables me to explore in a more detailed manner.
+
+2. First the text file, where we write our code is the original C source file. Before it can be compiled and turned into an executable file, it goes through a pre-processing phase where it prepares for compiling by removing comments, expanding included files and macro and conditional compilings, until finally preserving our original code, producing a ".i" file. This file is then compiled to form a ".s" file. This can be via different compilers such as GNU, LLVM and so much more. In our case of Visual Studios, it's MSVC. The ".s" file containing assembly instructions is assebled through an assembler to produce an object file containing machine instructions. Some compilers don't need linking but others do. After the linking process, an executable program will be formed.
+
+3. I hope to grasp a better understanding in the foundations of programming, and at the same time, contribute towards a broader knowledge that will enable me to become flexible and productive. I hope to become a full-stack developer and eventually a Dev-Ops and I do believe that this IPC course can be a great first step and contributes toward this milestone.
