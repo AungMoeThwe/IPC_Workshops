@@ -1,0 +1,24 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Aung Moe Thwe
+Student ID#: 148396237
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+A1.
+No. We can't. This is because the "for" loop is normally used when we know exactly the amount of times we need to iterate. We "can" use it utilising the flag concept where we validate and change the flag, but it's not really efficient and impractical and we are better off using a do...while loop.   
+
+A2.
+I used the switch concept in this case. Although If and ElseIf statements can be used, the readability of switch case is much more clear, flexible and faster in execution. Apart from that, we know for sure the scope of the program and it's not neccessary to utilise a If..ElseIf statement.
+
+A3.
+Using variables and macros can improve our readability, maintainability, flexibility and overall the efficiency of understanding and debugging our program. 
+We dont have to process numbers when looking at the code (improving readibility) and if there are any errors or typos, we dont have to go around changing every single part of the code, but rather just update a single variable or macro(maintainable). If we want to change values before running or compiling depending on the scenerio, we can do so by just updating it(Flexibility).
+For example, we used MIN_YEAR, MAX_YEAR and LOG_DAYS. These global variables applies to every part of the code and if per say, we want to update or change the program because its outdated, we can easily just update the values(flexibility) without needing to change every single part of the program if we had hardcoded them (maintainability). Apart from that, if we wanted to expand our program and collaborate with other developers, rather than trying to comprehend every numbers, they can easily understand what each value represents (readaibility)
+
+

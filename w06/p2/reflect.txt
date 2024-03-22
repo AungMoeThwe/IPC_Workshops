@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Aung Moe Thwe
+Student ID#: 148396237
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+A1.
+They are called parallel arrays. Its when the contents and indexes of an array corresponds to the same index of another array and so on, maintaining theur relationship using their positions. They are really useful because they make the data more simple and readable. They can be easily accessed compared to multi-dimentional arrays and its easy to maintain the array without impacting the other arrays.
+
+A2.
+For Loop is one of the most convenient constructs to use with arrays.
+In my code, I wrote
+
+for ( i = 0; i < item; i++)
+{
+	if (finance[i] == 'y')
+	{
+		note = 1;
+	}
+} // iteration throught the finance array to search for y
+
+If we try to rewrite it in another iteration it can be using a while loop.
+
+int i = 0;
+while (i < item) 
+{
+    if (finance[i] == 'y') 
+	{
+        note = 1;
+	}
+    i++;
+}
+
+Comparing these two, we can see that using a while iteration require an initialisation manually before the while, whereas the for loop has the initialisation in its syntax. The readability of the for loop is simple and preferred when we know for sure the exact number of iteration whereas the while iteration has a more complex loop control.
+
+A3.
+I tried building and compiling the program and putting in test datas to test and debug. 
+When there are errors, it comes up in the output area in visual studio. Depending on that I press on the error and it directs me to the line of the error. We can manually press it or check the line and column number in the error. Looking in that area, I try to find the errors assosciated with it and debug. I sometimes use breakpoints and run them through if the program gets really big. The errors in the output area is normally syntactic errors and the unexpected outputs that we get are usually semantic errors.
+
+
+

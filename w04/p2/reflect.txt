@@ -1,0 +1,25 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : Aung Moe Thwe
+Student ID#: 148396237
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1.
+Do/While and While loops are both iterations that can be used. Although they are quite similar, the way it executes is rather different. 
+For example, While loop checks the condition(s) before executing the code inside, and it will normally require an initialisation of the variables in some concepts. 
+However Do/While loops executes the codes inside first, regardless of the condition(s) before it checks the condition(s). If the condition is true, the loop will be executed again but if not it will exit the loop.
+
+2.
+If and If/Else If are both very useful in their own ways. Else If logics were used when there were multiple conditions to check and various forms in which the program could execute. Rather than using a switch case, Else If is better if there are multiple conditions to check and various outcomes that can't be determined.
+For example, when deciding and making decisions based on the users input on the amount of groceries to pick. We can have various outcomes and multiple conditions and these can't be written in a switch case nor a If as the former is unpredictable and the latter is better for smaller and definite outcomes. Hence, we used an Else IF.
+If statement is also useful, especially when we want to specify and know a single outcome. We can easily manipulate it with a If statement. For example in the final part of the workshop where it asks us if we want to end the program or continue another shopping. Using IF here is more viable since theres only one condition to be met; 0 or any other number.
+
+3.
+During the process of writing the code, I didnt start all together, but rather break the problems down into smaller problems and connected them through trial and error. I did this with the help of readable and context based variables when declaring them rather than jsut giving them any names. I also made use of both single and multi-line comments. Single line comments were used to mark what each portion of the code does and multi line comments were used during the develoment process in order to check if each bits of code matches and is correct. I also used them to run-check the program and get a better understanding of what I read. Identations were also very important as they helped me see a clearer and more readable view of what each portion is which as the program gets bigger and bigger.

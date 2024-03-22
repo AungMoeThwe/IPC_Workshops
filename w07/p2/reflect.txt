@@ -1,0 +1,48 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : Aung Moe Thwe
+Student ID#: 148396237
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+A1.
+a) 
+struct PlayerInfo // to define player information 
+{
+    int lives;
+    char representation;
+    int treasure_counter;
+    char history[MAXPATH];
+};
+struct GameInfo // to define game configuration 
+{
+    int moves;
+    int path;
+    int bombs[MAXPATH];
+    int treasure[MAXPATH];
+};
+b)
+int i;
+struct PlayerInfo player = { 0,'0',0,{0} };
+struct GameInfo config = { 0,0,{0},{0} };
+int move = 0;
+
+Without having any structures in the code, we might have to use dimensional arrays (arrays in an array) to achieve what we could do with a struct. This would make the code way more complex, time consuming and hard to understand and debug. It would be as if the data wouldn't be kept inside seperate containers to analyse.
+
+A2.
+I used them for the "display" portion of the code for a makeshift board, and to check the values and locations of the treasures and bombs and past locations. For example, config.bomb and config.treasure to be used to check against the player's move and updated in player.history.
+
+A3.
+line 195 (Do loop)
+do 
+{
+....
+} while ((config.moves > 0) && (player.lives > 0 )); // playing game loop
+
+This is the start of the main program. Since this is a do while loop, it will execute once before checking the condition of the loop. 
+According to the conditions of the code, the program will keep on running/executing as long as there are still moves left and the life is not 0. If either one of the conditions return false, the program will exit the loop. 

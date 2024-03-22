@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Aung Moe Thwe
+Student ID#: 148396237
+Email      : amthwe@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.
+I created 12 variables. 9 for initial display of product information and 3 for accepting user input. It's very important to organise variables because as the program scales and your code gets bigger, it gets very confusing, especially when you dont organize them or declared them in the same place or area you'll be writing. Apart from that we can see clearly which variables fall under which category of data types, and it enables us to reuse, debug or edit more efficiently. Furthermore, in bigger projects, it won't just be us working on the same code but other colleagues, and it's important for the readability of the entire program.
+
+2.
+printf(" 1|       %d         |      %d      |   %d   |\n", (strengthPref=='L' || strengthPref=='l'), (servingPref<=4 ), (creamPref=='Y' || creamPref=='y'));
+
+In this code above, which was written to determine the output for how preferences align to the available produce, we can see logical and relational operators such as (strengthPref=='L' || strengthPref=='l'), (servingPref<=4) and (creamPref=='Y' || creamPref=='y') being used. The "==" sign essentially compares if the values match and the || sign determines whether a 1 or 0 (normally true or false but this is C) would be outputted. Relational operators are <, >, <=, >=, != and logical operators are &&, ||, ! (AND, OR, NOT respectively). Based on the relational operators, logical operators compare statements and return a value or 1 or 0. (&& - both statements true). (|| one of the statement true). (! reverses the logic state. TRUE if FALSE and vice versa)
+
+3.
+DeMorgan's Law essentially states that the opposite of a compound condition is the compound condition with all sub-conditions reversed. For example when asked to calculate the serving size in relation to weight, to find out if the serving weight is 10 or greater than 10 to compare it to 1000g, we can write 
+!(servingPref<=4) && !(servingPref<=9)
+By applying DeMorgan's law we can rewrite it as:
+!((servingPref<=4) || (servingPref<=9))

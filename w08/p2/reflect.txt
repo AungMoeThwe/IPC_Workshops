@@ -1,0 +1,36 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Aung Moe Thwe
+Student ID#: 148396237
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+A1. 
+In the 
+
+double convertLbsKg(const double* ptrlbs, double* ptrKGResult); function,
+ 
+it takes in a pointer to a double value represented by "ptrlbs" as input and calculates the conversion to return a "double" value allocated to the memory pointed by "ptrKGResult". Essentially, it returns the "double" calculated value, and also returns the pointer argument. We can split it into two functions with the prototypes as followed.
+
+double convertLbsKg(const double* ptrlbs);
+void convertLbsKg2(const double*ptrlbs, double* ptrKGResult);
+
+The former returns the calculated value as a double but the latter does not return anything. It directly updates the value at the memory pointed by "ptrKGResult".
+
+A2.
+There are alot of functions that have high cohesion and low amount of coupling but some examples in the code are:
+
+int getIntPositive(int* val);
+
+double getDoublePositive(double* val);
+
+These functions have very high cohesion as they perform a single defined task, with very little dependence on other functions. In this case, getting a positive integer or a positive double from the user. They also have very low coupling as they only interact with the function calling with the provided pointer. They dont have to rely on other functions or data directly.
+
+A3.
+It provides a sense of modularity, information hiding (abstraction) and the ease of maintenance and collaboration.
+In this workshop, the seperation of the declaration of macros and function prototypes make our code more organized and this can prove to be beneficial as the codebase gets larger and larger. Furthermore, it enables us to cover up the implementation details, simplyfyin the usage of functions and reducing the dependencies with the logic of the program. But the most important of all is the maintenance, collaboration and the ease of debugging. Instead of codes being all over the place, the organisation mmakes it easier to find sections where we need to debug and traceback. It also helps in the readability of the code and for other developers/programmers to understand the program more. It can be clearly seen when we have to write bigger programs like this workshop. Containing a seperate header file enables us to state and write all our functions, macros and structures in a file, making it easier to refer and brainstorm the design process of our program.

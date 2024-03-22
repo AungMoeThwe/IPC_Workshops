@@ -1,0 +1,42 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Aung Moe Thwe
+Student ID#: 148396237
+Email      : amthwe@myseneca.ca
+Section    : ZBB
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. 
+The first snippet gives us a = 4, whereas the second one gives us a = 3.
+This is due to the structure in which the code is written. Both snippets start by initialising 3 into the variable a with a postfix operand. However the first snippet writes the operand before displaying whilst the second snippet displays the value of variable a and THEN ONLY applies the operand. Since C compiles the program line-by-line, the first snippet will increment the value of a first and THEN DISPLAYS the output (4), but the second program DISPLAYS the value of the variable first (3) and THEN increments it. Hence, the results.
+
+2.
+When running the program, we get the following outputs:
+1. 24.96 = 24.959999 (as cents:2496)
+2. 24.96 = 24.960000 (as cents:2496)
+3. 24.97 = 24.969999 (as cents:2497)
+4. 24.97 = 24.970000 (as cents:2497)
+By default C treats anything with a decimal point as a double even if its declared a float.
+Looking at the code we can see that price1 and price 3 are declared as floats and price2 and price4 are declared as doubles. Both of them are floating-points but float stores single-precision and double stores double-precision.
+price1 have a "f" suffix behind 24.96, but price2 doesnt. This forces C to take it as a single-precision value and price2 a double.    
+Essentially float has a limited precision compared to a double and due to the nature of that, 24.959999 is the approximation thats being imprecisely displayed.
+price3 shows 24.969999 because it has a "%f" specifier in the program so its being diaplayed as a single-precision too. The rest of the program works due to the double type, which has higher precision.
+price 2 and 4 were stores as doubles and hence, they can store longer values than a float, leading to more precise results.
+
+3.
+When we execute the program, we get the following results:
+1. $0.00
+2. $20
+3. $20.31
+4. $687194767
+Variables were all initially declared as integers.
+In the first, money(integer) is divided by 100(integer), it should give 20, but due to the format specifier being "%.2lf", C implicitly casts it to a double, hence it shows 0.00. This can also be called argument coercion.
+In the second, similar to the second, it has the same operation but the specifier is %d so C implicitly casts it to integer. The third and fourth has a different way of calculating where there is a (double). This automatically promotes to double explicitly due to the mixed operation.  
+In part 3, the format specifier is %.2lf (long float) and hence it shows the value of 20.31 correctly. However in part4, the percentage specifier "%d" indicates that it should print as an integer when it attempts a double hence the results are shown.
