@@ -1,0 +1,42 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 - Milestone 3
+Full Name  :Aung Moe Thwe
+Student ID#:148396237
+Email      :amthwe@myseneca.ca
+Section    :ZBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+1.
+In the very first part (MS1) we use a loop to get the length of the input string. For example in inputCString, its written as below.
+{
+length = 0;
+while (input[length] != '\0') {
+    length++;
+}
+However we use the string library to rewrite it like this:
+length = strlen(input);
+Another example is when we copy the input string into arrays:
+{
+for (i = 0; i < length; i++) {
+    cString[i] = input[i];
+}
+We can rewrite it like this:
+strncpy(cString, input, length);
+cString[length] = '\0'; // Ensure null-termination
+This simplifies the code in a way that it eliminates manual loops and potential errors when writing or debugging our codes. Furthermore, errors like forgetting to null-terminate strings can be avoided. It allows for refinement of the codes and reduces the complexity of teh code, making it much more maintainable, and readable. 
+
+2.
+The two variations of string copy functions I've used are strcpy() and strncpy(). Both are used to copy strings from one buffer to another, but they have significant differences in their behavior and safety, especially concerning buffer overflows. The former copies the source string with the null terminator to the buffer but it doesn't check teh destination buffer. So, if the source is longer than the destination, it might lead to buffer overflows and cause crashes and vulnerabilities. The later copies including the null terminator too but, if its less, it fills the remaining memory with null until all of them are written. It protects against buffer overflows by limiting the number of characters based on the provided size. However, if it is longer, then it won't be null terminated unless you do it manually. The better one is strncpy(). For example, instead of 
+"strcpy(cString, input);", we can use 
+"strncpy(cString, input, num);
+cString[num - 1] = '\0'; // Ensure null-termination."
+
+3.
+To keep them in ascending order, I used a sorting algorithm. More specifically, bubble sort. The function was " void sortAppointments(struct Appointment appointments[], int max)" 
+First, I convert it to minutes so that everything had the same units rather than hours and minutes. After that, I've implemented a bubble sort that iterates through the list, sorting them. Finally, I converted them back to the initial states of dates and times. The areas where I can improve is in the type of sort algorithm I've used. I could have used Merge or Insertion to achieve a better performance in case the data set get too big. Furthermore, converting them into minutes could have caused an overflow and I could have changed to long long int type to migate it. We can see repitions and some common patters can be improved with the optimization of data storage and retrieval, such as using a better data structure.
+
